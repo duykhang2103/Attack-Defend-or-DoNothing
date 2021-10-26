@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="game-preface">
+      <h2>Welcome to the HARDEST game in the world!</h1>
+      <h1>Attack, Defend or Do Nothing</h1>
+      <p>You might be thinking little of this game.</p>
+      <p>Haaa...</p>
+      <p>I'll give you 3 seconds to take that insolent thought back.</p>
+      <h1>TIME UP !!</h1>
+      <p>So you still keep that stupid opinion.</p>
+      <p>I will help you take that pig-head down.</p>
+      <p>Sit firmly.</p>
+      <h1>It's EXECUTION TIME !</h1>
+    <!--  <h4>Too bad.</h4>
+      <h4>Your mom must be very disappointed in you.</h4>
+      <h4>You should be ashamed of yourself.</h4>
+      <p>*Credit:</p>
+      <p>This game maybe just a failure</p>
+      <h3>Just like <h1>YOU.</h1></h3>
+      <p>Click <a href="#">SUPER MODE</a> to have your Health regenerate</p>
+    -->
+
+    <!-- <h4>So</h4>
+    <h4>You have defeat me ...</h4>
+    <h4>Or should I say,</h4>
+    <h2>The weakest ME</h2>
+    <h3>Behold</h3>
+    <h1>My FINAL form !</h1>  -->
+  </div>
+
+    <div class="game-board">
+
+      <div class="enemy">
+
+        <div class="enemy-stat">
+          <h3 class="enemy-bot">BOT</h3>
+          <h3 class="enemy-health">Health: 20</h3>
+        </div>
+
+        <div class="enemy-move">
+
+        </div>
+
+      </div>
+
+      <div class="arena">
+
+        <div class="enemy-action action">
+
+        </div>
+
+        <div>
+          <a href="#" class="fight" onclick="GameManager.test()"><strong class="strong">FIGHT</strong></a>
+        </div>
+
+        <div class="player-action action">
+
+        </div>
+
+      </div>
+
+      <div class="player">
+
+        <div class="player-move">
+          <ul>
+            <li><a href="#" class="attack move" onclick="GameManager.setFight('Attack')">Attack</a></li>
+            <li><a href="#" class="do-nothing move" onclick="GameManager.setFight('Do Nothing')">Do Nothing</a></li>
+            <li><a href="#" class="defend move" onclick="GameManager.setFight('Defend')">Defend</a></li>
+          </ul>
+        </div>
+
+        <div class="player-stat">
+          <h3 class="player-you">YOU</h3>
+          <h3 class="player-health">Health: 20</h3>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+  <script src="js/gamemanager.js"></script>
+  <script src="js/allCases.js"></script>
+</html>

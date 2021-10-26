@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #ffff8a;
+}
+
+@font-face {
+  font-family: pixel;
+  src: url("font/PressStart2P-Regular.ttf");
+}
+
+body {
+  width: 100%;
+  background-image: url("img/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120vw 110vh;
+}
+
+.game-preface {
+  position: absolute;
+  background-image: url("img/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120vw 110vh;
+  text-size-adjust: 135%;
+  font-family: pixel;
+  color: white;
+  width: 100vw;
+  height: 91vh;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  line-height: 3.5em;
+  visibility: hidden;
+  transition: all 4s ease-in-out;
+  opacity: 0;
+}
+
+.game-board {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+
+.game-board .enemy {
+  margin: 1em 1em;
+  height: 35vh;
+}
+
+.game-board .enemy .enemy-stat {
+  font-family: pixel;
+  font-size: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all 2s ease-in-out;
+}
+
+.game-board .arena {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 28vh;
+  background: rgba(255,255,255,0.1);
+}
+
+.game-board .arena .action {
+  font-family: pixel;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8em;
+  height: 3em;
+  border: 1px solid #ffff8a;
+}
+
+.game-board .arena .fight {
+  color: #effc30;
+  font-family: arial;
+  font-size: 40px;
+  width: 1em;
+  height: 2em;
+  visibility: hidden;
+}
+
+.game-board .arena .fight strong {
+  color:#effc30;
+}
+
+.game-board .arena .fight:hover .strong {
+  background: rgba(255,255,255,0.1);
+}
+
+.game-board .player {
+  margin: 1em 1em;
+  height: 20vh;
+}
+
+.game-board .player .player-move ul {
+  font-family: pixel;
+  height: 25vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+}
+
+.game-board .player .player-move ul .move:hover {
+  color: #e2f022;
+}
+
+.game-board .player .player-stat {
+  font-family: pixel;
+  font-size: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all 1s ease-in-out;
+}
+
+.super:hover {
+  background: rgba(255,255,255,0.2);
+}
